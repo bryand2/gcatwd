@@ -27,17 +27,17 @@ resource "ibm_resource_instance" "es_instance_1" {
   }
 }
 
-resource "ibm_event_streams_topic" "es_topic_1" {
-  resource_instance_id = ibm_resource_instance.es_instance_1.id
-  name                 = var.es_topic_name
-  partitions           = 1
-  config = {
-    "cleanup.policy"  = "compact,delete"
-    "retention.ms"    = "86400000"
-    "retention.bytes" = "1073741824"
-    "segment.bytes"   = "536870912"
-  }
-}
+#resource "ibm_event_streams_topic" "es_topic_1" {
+#  resource_instance_id = ibm_resource_instance.es_instance_1.id
+#  name                 = var.es_topic_name
+#  partitions           = 1
+#  config = {
+#    "cleanup.policy"  = "compact,delete"
+#    "retention.ms"    = "86400000"
+#    "retention.bytes" = "1073741824"
+#    "segment.bytes"   = "536870912"
+#  }
+#}
 
 
 
