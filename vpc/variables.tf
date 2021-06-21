@@ -17,7 +17,7 @@ variable resource_group {
 variable ibm_region {
     description = "IBM Cloud region where all resources will be deployed."
     type        = string
-    default     = "us-south"
+    default     = "us-east"
 }
 
 variable tags {
@@ -52,9 +52,9 @@ variable address_prefixes {
         zone = number
     }))
     default = {
-        prefix-1 = { name="address-prefix-1", cidr="10.240.0.0/18", zone="1"},
-        prefix-2 = { name="address-prefix-2", cidr="10.240.64.0/18", zone="2"},
-        prefix-3 = { name="address-prefix-3", cidr="10.240.128.0/18", zone="3"},
+        prefix-1 = { name="address-prefix-1", cidr="172.168.16.0/22", zone="1"},
+        prefix-2 = { name="address-prefix-2", cidr="172.168.20.0/22", zone="2"},
+        prefix-3 = { name="address-prefix-3", cidr="172.168.24.0/22", zone="3"},
     }
 }
 
@@ -66,12 +66,15 @@ variable subnets {
         pubgw = bool
     }))
     default = {
-        subnet-1a = {name="subnet-az1-pub", cidr="10.240.0.0/24", zone="1", pubgw="false"},
-        subnet-1b = {name="subnet-az1-priv", cidr="10.240.1.0/24", zone="1", pubgw="false"},
-        subnet-2a = {name="subnet-az2-pub", cidr="10.240.64.0/24", zone="2", pubgw="false"},
-        subnet-2b = {name="subnet-az2-priv", cidr="10.240.65.0/24", zone="2", pubgw="false"},
-        subnet-3a = {name="subnet-az3-pub", cidr="10.240.128.0/24", zone="3", pubgw="false"}
-        subnet-3b = {name="subnet-az3-priv", cidr="10.240.129.0/24", zone="3", pubgw="false"}
+        subnet-1a = {name="subnet-az1-pub", cidr="172.168.17.0/24", zone="1", pubgw="false"},
+        subnet-1b = {name="subnet-az1-priv", cidr="172.168.18.0/24", zone="1", pubgw="false"},
+        subnet-1c = {name="subnet-az1-mgmt", cidr="172.168.16.0/24", zone="1", pubgw="false"},
+        subnet-2a = {name="subnet-az2-pub", cidr="172.168.21.0/24", zone="2", pubgw="false"},
+        subnet-2b = {name="subnet-az2-priv", cidr="172.168.22.0/24", zone="2", pubgw="false"},
+        subnet-2c = {name="subnet-az2-mgmt", cidr="172.168.20.0/24", zone="2", pubgw="false"},
+        subnet-3a = {name="subnet-az3-pub", cidr="10.240.128.0/24", zone="3", pubgw="false"},
+        subnet-3b = {name="subnet-az3-priv", cidr="172.168.25.0/24", zone="3", pubgw="false"}
+        subnet-3c = {name="subnet-az3-mgmt", cidr="172.168.24.0/24", zone="3", pubgw="false"},
     }
 }
 
