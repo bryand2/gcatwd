@@ -1,0 +1,1 @@
+# Creates an Event Streams instance
