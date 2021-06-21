@@ -20,11 +20,11 @@ resource "ibm_resource_instance" "es_instance_1" {
   #   # document about supported combinations of throughput and storage_size: https://cloud.ibm.com/docs/EventStreams?topic=EventStreams-ES_scaling_capacity#ES_scaling_combinations
   # }
 
-  # timeouts {
-  #   create = "15m" # use 3h when creating enterprise instance, add additional 1h for each level of non-default throughput, add additional 30m for each level of non-default storage_size
-  #   update = "15m" # use 1h when updating enterprise instance, add additional 1h for each level of non-default throughput, add additional 30m for each level of non-default storage_size
-  #   delete = "15m"
-  # }
+  timeouts {
+     create = var.es_timeout # use 3h when creating enterprise instance, add additional 1h for each level of non-default throughput, add additional 30m for each level of non-default storage_size
+     update = var.es_timeout # use 1h when updating enterprise instance, add additional 1h for each level of non-default throughput, add additional 30m for each level of non-default storage_size
+     delete = var.es_timeout
+  }
 }
 
 resource "ibm_event_streams_topic" "es_topic_1" {
