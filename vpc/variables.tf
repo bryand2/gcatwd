@@ -72,9 +72,8 @@ variable subnets {
         subnet-2a = {name="subnet-az2-pub", cidr="172.168.21.0/24", zone="2", pubgw="false"},
         subnet-2b = {name="subnet-az2-priv", cidr="172.168.22.0/24", zone="2", pubgw="false"},
         subnet-2c = {name="subnet-az2-mgmt", cidr="172.168.20.0/24", zone="2", pubgw="false"},
-        subnet-3a = {name="subnet-az3-pub", cidr="10.240.128.0/24", zone="3", pubgw="false"},
+        subnet-3a = {name="subnet-az3-pub", cidr="172.168.24.0/24", zone="3", pubgw="false"},
         subnet-3b = {name="subnet-az3-priv", cidr="172.168.25.0/24", zone="3", pubgw="false"}
-        subnet-3c = {name="subnet-az3-mgmt", cidr="172.168.24.0/24", zone="3", pubgw="false"},
     }
 }
 
