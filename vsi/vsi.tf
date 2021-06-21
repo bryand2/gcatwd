@@ -44,7 +44,7 @@ resource ibm_is_instance vsi1 {
     zone           = var.vsi1_vpc_zone
     primary_network_interface {
         name    = "eth0"
-        subnet  = local.vsi1_subnet_ids[0]
+        subnet  = "0717-0efce8fd-7926-4ff2-a83f-7f1a9e117173"
     }   
 }
 
@@ -78,7 +78,7 @@ resource ibm_is_instance vsi2 {
     zone           = var.vsi2_vpc_zone
     primary_network_interface {
         name    = "eth0"
-        subnet  = "0767-fdb68067-c5c2-495d-88e4-14fe30592647"
+        subnet  = "0727-3b0e6362-9d4f-4270-8088-d75a3cba452b"
     }   
 }
 
@@ -112,7 +112,7 @@ resource ibm_is_instance vsi3 {
     zone           = var.vsi3_vpc_zone
     primary_network_interface {
         name    = "eth0"
-        subnet  = local.vsi3_subnet_ids[0]
+        subnet  = "0737-c5e10db4-2d6c-4bec-aaf6-6fd763e09ca6"
     }   
 }
 
@@ -145,7 +145,7 @@ resource ibm_is_instance vsi4 {
     zone           = var.vsi4_vpc_zone
     primary_network_interface {
         name    = "eth0"
-        subnet  = local.vsi4_subnet_ids[0]
+        subnet  = "0717-0efce8fd-7926-4ff2-a83f-7f1a9e117173"
     }   
 }
 
@@ -179,7 +179,7 @@ resource ibm_is_instance vsi5 {
     zone           = var.vsi5_vpc_zone
     primary_network_interface {
         name    = "eth0"
-        subnet  = local.vsi5_subnet_ids[0]
+        subnet  = "0727-3b0e6362-9d4f-4270-8088-d75a3cba452b"
     }   
 }
 
@@ -212,7 +212,7 @@ resource ibm_is_instance vsi6 {
     zone           = var.vsi6_vpc_zone
     primary_network_interface {
         name    = "eth0"
-        subnet  = local.vsi6_subnet_ids[0]
+        subnet  = "0737-c5e10db4-2d6c-4bec-aaf6-6fd763e09ca6"
     }   
 }
 
