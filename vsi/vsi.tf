@@ -78,7 +78,7 @@ resource ibm_is_instance vsi2 {
     zone           = var.vsi2_vpc_zone
     primary_network_interface {
         name    = "eth0"
-        subnet  = local.vsi2_subnet_ids[0]
+        subnet  = "0767-fdb68067-c5c2-495d-88e4-14fe30592647"
     }   
 }
 
