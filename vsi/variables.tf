@@ -17,7 +17,7 @@ variable resource_group {
 variable ibm_region {
   description = "IBM Cloud region where all resources will be deployed"
   type        = string
-  default     = "us-east"
+  default     = "us-south"
 }
 
 variable tags {
@@ -74,7 +74,7 @@ variable vsi1_machine_profile {
 variable vsi1_vpc_zone {
   description = "Name of the zone where the VSI will be deployed (i.e. us-south-1, us-south-2, us-east-1, etc). Zone should match VPC region."
   type        = string
-  default     = "us-east-1"
+  default     = "us-south-1"
 }
 
 variable vsi1_vpc_subnet_name {
@@ -112,7 +112,7 @@ variable vsi2_machine_profile {
 variable vsi2_vpc_zone {
   description = "Name of the zone where the VSI will be deployed (i.e. us-south-1, us-south-2, us-east-1, etc). Zone should match VPC region."
   type        = string
-  default     = "us-east-2"
+  default     = "us-south-2"
 }
 
 variable vsi2_vpc_subnet_name {
@@ -150,7 +150,7 @@ variable vsi3_machine_profile {
 variable vsi3_vpc_zone {
   description = "Name of the zone where the VSI will be deployed (i.e. us-south-1, us-south-2, us-east-1, etc). Zone should match VPC region."
   type        = string
-  default     = "us-east-3"
+  default     = "us-south-3"
 }
 
 variable vsi3_vpc_subnet_name {
@@ -187,7 +187,7 @@ variable vsi4_machine_profile {
 variable vsi4_vpc_zone {
   description = "Name of the zone where the VSI will be deployed (i.e. us-south-1, us-south-2, us-east-1, etc). Zone should match VPC region."
   type        = string
-  default     = "us-east-1"
+  default     = "us-south-1"
 }
 
 variable vsi4_vpc_subnet_name {
@@ -224,7 +224,7 @@ variable vsi5_machine_profile {
 variable vsi5_vpc_zone {
   description = "Name of the zone where the VSI will be deployed (i.e. us-south-1, us-south-2, us-east-1, etc). Zone should match VPC region."
   type        = string
-  default     = "us-east-2"
+  default     = "us-south-2"
 }
 
 variable vsi5_vpc_subnet_name {
@@ -261,7 +261,7 @@ variable vsi6_machine_profile {
 variable vsi6_vpc_zone {
   description = "Name of the zone where the VSI will be deployed (i.e. us-south-1, us-south-2, us-east-1, etc). Zone should match VPC region."
   type        = string
-  default     = "us-east-3"
+  default     = "us-south-3"
 }
 
 variable vsi6_vpc_subnet_name {
