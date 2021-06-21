@@ -2,11 +2,11 @@
 # Account Variables
 ##############################################################################
 
-variable ibmcloud_api_key {
-  description = "The IBM Cloud platform API key needed to deploy IAM enabled resources"
-  type        = string
-  default     = ""
-}
+#variable ibmcloud_api_key {
+#  description = "The IBM Cloud platform API key needed to deploy IAM enabled resources"
+#  type        = string
+#  default     = ""
+#}
 
 variable resource_group {
   description = "Name of resource group to create the VSI"
